@@ -1,16 +1,4 @@
-/**
-* Template Name: Kelly
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
@@ -1415,11 +1403,8 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
+
 .starter-section {
-  /* Add your styles here */
 }
 .resume-title {
   font-weight: 700;
@@ -1467,23 +1452,4 @@ section,
   position: absolute;
   left: 0;
   color: #28a745;
-}
-.hero-img {
-  max-width: 100%;   /* never overflow screen */
-  height: auto;      /* keep ratio */
-  display: block;
-  margin: 0 auto;    /* center on all screens */
-}
-
-/* Optional: keep same look across devices */
-@media (max-width: 992px) {
-  .hero-img {
-    width: 80%;   /* slightly smaller on tablets/mobiles */
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-img {
-    width: 90%;   /* shrink more for small mobiles */
-  }
 }
