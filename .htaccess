@@ -1,27 +1,28 @@
 RewriteEngine On
-Options +FollowSymLinks -MultiViews
 
-# Remove trailing slashes
+# Remove .html extension
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/$ /$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
 
-# Remove .html extension from URLs
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+# Redirect from .html to clean URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
 
-# Redirect /index.html to /
-RewriteRule ^index\.html$ / [R=301,L]
-
-# Redirect URLs with .html to clean URLs
-RewriteCond %{THE_REQUEST} \.html
-RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+# Redirect /index to /
+RewriteRule ^index$ / [R=301,L]
 
 # Force HTTPS
 RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Remove www
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]ngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect from .html to clean URL
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
