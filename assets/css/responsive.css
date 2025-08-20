@@ -1,16 +1,57 @@
+/* Base responsive styles */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0 100px;
+}
+
+.hero-image-container {
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  transition: all 0.3s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero h2 {
+  transition: font-size 0.3s ease;
+}
+
+.hero p {
+  transition: all 0.3s ease;
+}
+
+.btn-get-started {
+  transition: all 0.3s ease;
+}
+
 /* Extra small devices (phones, 576px and down) */
 @media (max-width: 576px) {
   .hero h2 {
     font-size: 32px;
+    margin-bottom: 15px;
   }
   
   .hero p {
     font-size: 18px;
+    line-height: 1.5;
   }
 
   .hero-img {
     max-width: 90%;
     height: auto;
+    margin-bottom: 20px;
+  }
+
+  .btn-get-started {
+    padding: 10px 24px;
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 100px 0 60px;
   }
 
   .section-title h2 {
@@ -39,10 +80,21 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .hero h2 {
     font-size: 36px;
+    margin-bottom: 20px;
   }
 
   .hero-img {
     max-width: 80%;
+    margin-bottom: 25px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .hero {
+    padding: 120px 0 80px;
   }
 
   .section-title h2 {
