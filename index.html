@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
+<head>      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="resume">Resume</a></li>
+          <!-- <li><a href="services">Services</a></li> -->
+          <li><a href="portfolio">Portfolio</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul> charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Isan Adhikari</title>
   <meta name="description" content="Portfolio of Isan Adhikari - Network Engineer and Full Stack Developer specializing in MERN stack and network security">
@@ -27,6 +34,10 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Responsive CSS Files -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link href="assets/css/nav-responsive.css" rel="stylesheet">
 
 
 </head>
@@ -36,7 +47,7 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="./" class="logo d-flex align-items-center me-auto me-xl-0">
         <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">ISAN</h1>
       </a>
@@ -68,14 +79,16 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section text-center">
 
-  <img src="assets/img/hello.png" alt="Hello" class="hero-img" data-aos="fade-in">
+  <div class="hero-image-container">
+    <img src="assets/img/hello.png" alt="Hello" class="hero-img img-fluid" data-aos="fade-in">
+  </div>
 
   <div class="container" data-aos="zoom-out" data-aos-delay="100">
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <h2>Isan Adhikari</h2>
         <p style="text-align: center;">Always learning, Always growing</p>
-        <a href="/about" class="btn-get-started">About Me</a>
+        <a href="about" class="btn-get-started">About Me</a>
       </div>
     </div>
   </div>
