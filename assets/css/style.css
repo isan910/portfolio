@@ -758,6 +758,16 @@ section {
     opacity: 0.9;
 }
 
+.cta-content .btn-primary {
+    background-color: white;
+    color: var(--color-accent);
+}
+
+.cta-content .btn-primary:hover {
+    background-color: var(--color-bg-primary);
+    color: var(--color-accent);
+}
+
 /* ===================================
    CERTIFICATES GRID
    =================================== */
@@ -877,26 +887,14 @@ section {
 }
 
 .btn-primary {
-    background-color: white;
-    color: var(--color-bg-primary);
-}
-
-[data-theme="light"] .btn-primary {
     background-color: var(--color-accent);
     color: white;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
-    border: 2px solid var(--color-accent);
 }
 
 .btn-primary:hover {
+    background-color: var(--color-accent-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
-}
-
-[data-theme="light"] .btn-primary:hover {
-    background-color: var(--color-accent-hover);
-    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
-    border-color: var(--color-accent-hover);
 }
 
 .btn-secondary {
@@ -905,22 +903,9 @@ section {
     border: 2px solid var(--color-border);
 }
 
-[data-theme="light"] .btn-secondary {
-    background-color: white;
-    color: var(--color-text-primary);
-    border: 2px solid var(--color-text-secondary);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 .btn-secondary:hover {
     border-color: var(--color-accent);
     color: var(--color-accent);
-}
-
-[data-theme="light"] .btn-secondary:hover {
-    border-color: var(--color-accent);
-    background-color: rgba(99, 102, 241, 0.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-block {
@@ -990,11 +975,6 @@ section {
 .footer-contact-btn:hover {
     background-color: var(--color-accent-hover);
     transform: translateY(-2px);
-}
-
-[data-theme="light"] .footer-contact-btn:hover {
-    background-color: var(--color-accent-hover);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 .footer-bottom {
@@ -1265,27 +1245,11 @@ section {
     transition: all var(--transition-base);
 }
 
-[data-theme="light"] .filter-btn {
-    background-color: white;
-    border: 2px solid var(--color-border);
-    color: var(--color-text-primary);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-}
-
 .filter-btn:hover,
 .filter-btn.active {
     color: var(--color-text-primary);
     background-color: var(--color-accent);
     border-color: var(--color-accent);
-}
-
-[data-theme="light"] .filter-btn.active {
-    color: white;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
-}
-
-[data-theme="light"] .filter-btn:hover {
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
 }
 
 .opensource-section {
@@ -1796,12 +1760,6 @@ textarea.form-control {
     z-index: 999;
 }
 
-[data-theme="light"] .scroll-to-top {
-    background-color: var(--color-accent);
-    color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
 .scroll-to-top.visible {
     opacity: 1;
     visibility: visible;
@@ -1810,10 +1768,6 @@ textarea.form-control {
 .scroll-to-top:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-xl);
-}
-
-[data-theme="light"] .scroll-to-top:hover {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ===================================

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Isan Adhikari - Full Stack Developer & Designer. Passionate about crafting engaging, accessible, and user-centric experiences.">
+    <meta name="keywords" content="Isan Adhikari, Full Stack Developer, Web Developer, PHP, Laravel, React, Portfolio">
+    <meta name="author" content="Isan Adhikari">
+    <title>Projects - Isan Adhikari</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index" class="nav-logo">
+                    <span class="logo-text">ISAN</span>
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="index" class="nav-link">
+                        Work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about" class="nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects" class="nav-link active">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="certificates" class="nav-link">
+                        Certificates
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-social">
+                <a href="https://github.com/isan910" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/isan-adhikari" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/esan_adhikari" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+<main class="main-content projects-page">
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-hero-content" data-aos="fade-up">
+                <h1 class="page-title">Projects</h1>
+                <p class="page-subtitle">
+                    Completed and upcoming projects showcasing my skills
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Completed Projects Section -->
+    <section class="certificates-grid-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 3rem;">Completed Projects</h2>
+            <div class="certificates-grid">
+                <!-- Project 1: Cleaning Service -->
+                <a href="https://github.com/isan910/cleaning-service" target="_blank" rel="noopener noreferrer" class="certificate-box" data-aos="fade-up">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="cert-title">Cleaning Service Platform</h3>
+                    <p class="cert-details"><span class="cert-year">2024</span> • Web Application</p>
+                    <ul style="text-align: left; padding: 0 20px; font-size: 14px; color: var(--color-text-secondary); margin-top: 10px;">
+                        <li>Online booking system for cleaning services</li>
+                        <li>Service scheduling and management</li>
+                        <li>User authentication and profiles</li>
+                        <li>Responsive design for mobile and desktop</li>
+                    </ul>
+                </a>
+
+                <!-- Project 2: Share Forecasting -->
+                <a href="https://github.com/isan910/share-forecasting" target="_blank" rel="noopener noreferrer" class="certificate-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="20" x2="12" y2="10"></line>
+                            <line x1="18" y1="20" x2="18" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3 class="cert-title">Share Forecasting System</h3>
+                    <p class="cert-details"><span class="cert-year">2024</span> • Data Analysis</p>
+                    <ul style="text-align: left; padding: 0 20px; font-size: 14px; color: var(--color-text-secondary); margin-top: 10px;">
+                        <li>Stock market prediction using ML algorithms</li>
+                        <li>Data visualization and trend analysis</li>
+                        <li>Historical data processing and forecasting</li>
+                        <li>Interactive charts and real-time updates</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Projects Section -->
+    <section class="certificates-grid-section" style="padding-top: 0;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" style="margin-bottom: 3rem;">Upcoming Projects</h2>
+            <div class="certificates-grid">
+                <!-- Upcoming Project 1 -->
+                <div class="certificate-box" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="cert-title">Intrusion Detection System</h3>
+                    <p class="cert-details"><span class="cert-year">In Progress</span> • Security</p>
+                    <ul style="text-align: left; padding: 0 20px; font-size: 14px; color: var(--color-text-secondary); margin-top: 10px;">
+                        <li>Network traffic analysis using Python</li>
+                        <li>Packet capturing with Wireshark</li>
+                        <li>Real-time threat detection</li>
+                        <li>Automated alert system</li>
+                    </ul>
+                </div>
+
+                <!-- Upcoming Project 2 -->
+                <div class="certificate-box" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="cert-title">Firewall Rule Optimization</h3>
+                    <p class="cert-details"><span class="cert-year">Planning</span> • Network Security</p>
+                    <ul style="text-align: left; padding: 0 20px; font-size: 14px; color: var(--color-text-secondary); margin-top: 10px;">
+                        <li>Optimize firewall rules for SME networks</li>
+                        <li>Performance monitoring and analysis</li>
+                        <li>Security policy implementation</li>
+                        <li>Cost-effective security solutions</li>
+                    </ul>
+                </div>
+
+                <!-- Upcoming Project 3 -->
+                <div class="certificate-box" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3 class="cert-title">IoT Device Security</h3>
+                    <p class="cert-details"><span class="cert-year">Planning</span> • IoT Security</p>
+                    <ul style="text-align: left; padding: 0 20px; font-size: 14px; color: var(--color-text-secondary); margin-top: 10px;">
+                        <li>Securing IoT devices in home networks</li>
+                        <li>Network segmentation for IoT</li>
+                        <li>Vulnerability assessment</li>
+                        <li>Best practices implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Interested in collaborating?</h2>
+                <p>Let's work together on your next networking or security project.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-copyright">
+                        © <span class="current-year">2026</span> Isan Adhikari • All rights reserved.
+                    </p>
+                </div>
+                
+                <div class="footer-center">
+                    <h3 class="footer-title">Elsewhere</h3>
+                    <div class="footer-links">
+                        <a href="https://github.com/isan910" target="_blank" rel="noopener noreferrer" class="footer-link">Github</a>
+                        <a href="https://www.linkedin.com/in/isan-adhikari" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                        <a href="https://twitter.com/esan_adhikari" target="_blank" rel="noopener noreferrer" class="footer-link">Twitter</a>
+                        <a href="https://instagram.com/esanadhikari" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+                    </div>
+                </div>
+                
+                <div class="footer-right">
+                    <h3 class="footer-title">Contact</h3>
+                    <a href="contact" class="footer-contact-btn">
+                        Message
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-tagline">Always learning, Always growing</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
