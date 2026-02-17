@@ -14,7 +14,7 @@ Allow: /assets/js/
 Allow: /assets/images/
 
 # Sitemap location
-Sitemap: https://isanadhikari.com/sitemap.xml
+Sitemap: https://isanadhikari.com.np/sitemap.xml
 
 # Crawl-delay (optional - uncomment if needed)
 # Crawl-delay: 10
